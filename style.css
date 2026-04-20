@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+  color: darkgray;
+}
+html{
+  font-size: clamp(10px , 2vw , 20px);
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #FFD0E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  position: relative;
+  perspective: 1000px;
+  width: 40rem;
+  height: 30rem;
+  margin: 5rem;
+}
+.card{
+  transform-style: preserve-3d;
+  position: relative;
+  transition: 0.5s;
+  height: 100%;
+  width: 100%;
+}
+.side{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backface-visibility: hidden;
+  gap: 1rem;
+  background-color: #276DA3;
+  border-radius: 1rem;
+  box-shadow: 0 0 3rem 0.5rem #002EFF;
+  transition: 0.5s;
+}
+.sign{
+  transform: rotateY(180deg);
+}
+input{
+  transition: 0.5s;
+  width: 55%;
+  height: 3.8rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px black;
+}
+input::placeholder{
+  color: darkgrey;
+  font-size:1.6rem;
+}
+input:focus{
+  box-shadow: 0 0 0.8rem 0.4rem #002EFF;
+  border: none;
+}
+input:focus::placeholder{
+  color: transparent;
+}
+h1{
+  font-size: 2.5rem;
+  margin: 2rem;
+  background: linear-gradient(to right, skyblue, #0091FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p{
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+button{
+  background-color: #00E7FF;
+  outline: none;
+  border: none;
+  border-radius: 0.8rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+  box-shadow: 0.3rem 0.3rem 0 0 #7188A6;
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+button:active{
+  transform: translate(0.3rem, 0.3rem);
+  box-shadow: 0 0 0 0 #7188A6;
+}
+.flip{
+  transform: rotateY(180deg);
+}
+span{
+  color: blue;
+}
+.side:has(input:focus) {
+  box-shadow: 0.5rem 0.5rem 0rem 0.5rem #969FA3 ;
+}
