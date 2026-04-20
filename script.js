@@ -23,8 +23,8 @@ document.getElementById("login").onclick = function() {
       //  "Content-Type": "application/json"
       //},
      // body: JSON.stringify({
-        username: user,
-        password: pass
+       // username: user,
+        //password: pass
      // })
       //})
     .then(res => res.json())
