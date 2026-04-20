@@ -17,16 +17,16 @@ document.getElementById("login").onclick = function() {
     return
   }else{
     document.getElementById("l").textContent = "Checking..."
-    fetch("https://your-backend.onrender.com/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
+    //fetch("https://your-backend.onrender.com/login", {
+      //method: "POST",
+     // headers: {
+      //  "Content-Type": "application/json"
+      //},
+     // body: JSON.stringify({
         username: user,
         password: pass
-      })
-      })
+     // })
+      //})
     .then(res => res.json())
     .then(data => {
       if(data.success){
@@ -69,16 +69,16 @@ document.getElementById("sign").onclick = function() {
     return
   }else{
     document.getElementById("s").textContent = "Creating account..."
-    fetch("https://your-backend.onrender.com/sign", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        username: userr,
-        password: passs
-      })
-      })
+    //fetch("https://your-backend.onrender.com/sign", {
+     // method: "POST",
+     // headers: {
+      //  "Content-Type": "application/json"
+    //  },
+    //  body: JSON.stringify({
+      //  username: userr,
+      //  password: passs
+   //   })
+   //   })
     .then(res => res.json())
     .then(data => {
       if(data.success){
