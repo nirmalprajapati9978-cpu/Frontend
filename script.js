@@ -17,7 +17,7 @@ document.getElementById("login").onclick = function() {
     return
   }else{
     document.getElementById("l").textContent = "Checking..."
-    fetch("http://localhost:8000/login", {
+    fetch("https://your-backend.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -69,7 +69,7 @@ document.getElementById("sign").onclick = function() {
     return
   }else{
     document.getElementById("s").textContent = "Creating account..."
-    fetch("http://localhost:8000/sign", {
+    fetch("https://your-backend.onrender.com/sign", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
