@@ -102,5 +102,5 @@ span{
   color: blue;
 }
 .side:has(input:focus) {
-  box-shadow: 0.5rem 0.5rem 0rem 0.5rem #969FA3 ;
+  box-shadow: 0 0 0 0 ;
 }
