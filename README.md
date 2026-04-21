@@ -4,7 +4,7 @@ A clean and modern login + signup interface built using HTML, CSS, and JavaScrip
 
 ---
 
-✨ Features
+## ✨ Features
 
 - 🔁 Flip animation between Login & Sign-Up
 - 🎨 Modern UI with gradients and shadows
@@ -15,7 +15,7 @@ A clean and modern login + signup interface built using HTML, CSS, and JavaScrip
 
 ---
 
-📂 Project Structure
+## 📂 Project Structure
 
 ├── index.html      # Main HTML file
 ├── style.css       # Styling (UI + animation)
@@ -23,7 +23,7 @@ A clean and modern login + signup interface built using HTML, CSS, and JavaScrip
 
 ---
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 1. Clone the repository:
 
@@ -39,7 +39,7 @@ cd your-repo-name
 
 ---
 
-🔌 API Endpoints Used
+## 🔌 API Endpoints Used
 
 Action| Endpoint
 Login| "POST /login"
@@ -54,7 +54,7 @@ Example Request Body:
 
 ---
 
-🧠 Validation Rules
+## 🧠 Validation Rules
 
 - Username must be at least 3 characters
 - Password must be at least 4 characters
@@ -62,7 +62,7 @@ Example Request Body:
 
 ---
 
-🎭 UI Behavior
+## 🎭 UI Behavior
 
 - Click "Sign up" → flips to signup form
 - Click "Login" → flips back to login form
@@ -74,7 +74,7 @@ Example Request Body:
 
 ---
 
-⚠️ Notes
+## ⚠️ Notes
 
 - This is only the frontend
 - Backend must be running at:
@@ -85,7 +85,7 @@ https://backend-js1e.onrender.com
 
 ---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - HTML5
 - CSS3 (Flexbox + 3D transforms)
@@ -93,7 +93,7 @@ https://backend-js1e.onrender.com
 
 ---
 
-💡 Future Improvements
+## 💡 Future Improvements
 
 - 🔐 Add JWT token handling
 - 🧂 Password hashing (frontend hint + backend secure)
@@ -103,23 +103,24 @@ https://backend-js1e.onrender.com
 
 ---
 
-🙌 Contributing
+## 🙌 Contributing
 
 Pull requests are welcome. For major changes, open an issue first.
 
 ---
 
-📄 License
+## 📄 License
 
 This project is open source and free to use.
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Made with 💙 by Nirmal
 
 ---
 
 ## 🌐 Live Demo
-https://github.com/nirmalprajapati9978-cpu/Frontend.git
+
+https://nirmalprajapati9978-cpu.github.io/Frontend/
