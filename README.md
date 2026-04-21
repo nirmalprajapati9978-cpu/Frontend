@@ -1,5 +1,4 @@
-# Frontend
-🔐 Login / Sign-Up UI (Frontend)
+# 🔐 Login / Sign-Up UI (Frontend)
 
 A clean and modern login + signup interface built using HTML, CSS, and JavaScript with a smooth 3D flip animation. This project connects to a backend API for authentication.
 
@@ -28,7 +27,7 @@ A clean and modern login + signup interface built using HTML, CSS, and JavaScrip
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone git clone https://github.com/nirmalprajapati9978-cpu/Frontend.git
 
 2. Open the project folder:
 
@@ -121,3 +120,6 @@ This project is open source and free to use.
 Made with 💙 by Nirmal
 
 ---
+
+## 🌐 Live Demo
+https://git clone https://github.com/nirmalprajapati9978-cpu/Frontend.git.netlify.app
