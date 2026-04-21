@@ -122,4 +122,4 @@ Made with 💙 by Nirmal
 ---
 
 ## 🌐 Live Demo
-https://git clone https://github.com/nirmalprajapati9978-cpu/Frontend.git.netlify.app
+https://github.com/nirmalprajapati9978-cpu/Frontend.git
