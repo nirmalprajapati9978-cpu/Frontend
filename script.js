@@ -16,8 +16,9 @@ document.getElementById("login").onclick = function() {
     document.getElementById("l").textContent = "Password must be 4+"
     return
   }else{
-    document.getElementById("l").textContent = "Checking..."
-    fetch("https://backend-js1e.onrender.com/login", {
+    document.getElementById("l").textContent = "Checking"
+    document.getElementById("kax").style.display = "inline-bolck"
+      fetch("https://backend-js1e.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -68,8 +69,9 @@ document.getElementById("sign").onclick = function() {
     document.getElementById("s").textContent = "Password must be 4+"
     return
   }else{
-    document.getElementById("s").textContent = "Creating account..."
-    fetch("https://backend-js1e.onrender.com/sign", {
+    document.getElementById("s").textContent = "Creating account"
+    document.getElementById("nir").style.display = "inline-block"
+      fetch("https://backend-js1e.onrender.com/sign", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
