@@ -104,3 +104,14 @@ span{
 .side:has(input:focus) {
   box-shadow: 0 0 0 0 ;
 }
+#nir #kax{
+  font-size: 1.2rem;
+  content: "";
+  animation: dots 0.8s steps(3, end) infinite;
+}
+@keyframes dots {
+  0%{content: ""}
+  33%{content: "."}
+  66%{content: ".."}
+  100%{content: "..."}
+}
