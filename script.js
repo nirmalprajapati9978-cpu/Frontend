@@ -14,9 +14,11 @@ document.getElementById("login").onclick = function() {
     setTimeout( log, 3000)
   }else if (user.length < 3){
     l.textContent = "Username must be 3+"
+    setTimeout( log, 3000)
     return
   }else if (pass.length < 4){
     l.textContent = "Password must be 4+"
+    setTimeout( log, 3000)
     return
   }else{
     l.textContent = "Checking"
@@ -65,9 +67,11 @@ document.getElementById("sign").onclick = function() {
     setTimeout(siggg, 3000)
   }else if (userr.length < 3){
     s.textContent = "Username must be 3+"
+    setTimeout(siggg, 3000)
     return
   }else if (passs.length < 4){
     s.textContent = "Password must be 4+"
+    setTimeout(siggg, 3000)
     return
   }else{
     s.textContent = "Creating account"
