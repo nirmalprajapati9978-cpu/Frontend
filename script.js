@@ -1,23 +1,26 @@
+let l = document.getElementById("l");
+let s = document.getElementById("s");
 function sig() {
   document.getElementById("b").classList.toggle("flip");
 }
 document.getElementById("login").onclick = function() {
   let user = document.getElementById("int1").value;
   let pass = document.getElementById("int2").value;
+  function log() {
+    l.innerHTML = `Don't have an account? <span id="ll" onclick="sig()">Sign up</span>`;
+  }
   if(user === "" || pass === ""){
-    document.getElementById("l").textContent = "All fields are require 😳 "
-    setTimeout(() => {
-    document.getElementById("l").innerHTML = `Don't have an account? <span id="ll" onclick="sig()">Sign up</span>`;
-    }, 3000)
+    l.textContent = "All fields are require 😳 "
+    setTimeout( log, 3000)
   }else if (user.length < 3){
-    document.getElementById("l").textContent = "Username must be 3+"
+    l.textContent = "Username must be 3+"
     return
   }else if (pass.length < 4){
-    document.getElementById("l").textContent = "Password must be 4+"
+    l.textContent = "Password must be 4+"
     return
   }else{
-    document.getElementById("l").textContent = "Checking"
-    document.getElementById("kax").style.display = "inline-bolck"
+    l.textContent = "Checking"
+    l.classList.add("m")
       fetch("https://backend-js1e.onrender.com/login", {
       method: "POST",
       headers: {
@@ -31,46 +34,44 @@ document.getElementById("login").onclick = function() {
     .then(res => res.json())
     .then(data => {
       if(data.success){
-        document.getElementById("l").textContent = "Login success ✔️"
-        setTimeout(() => {
-        document.getElementById("l").innerHTML = `Don't have an account? <span id="ll" onclick="sig()">Sign up</span>`;
-          }, 1300)
+        l.classList.remove("m")
+        l.textContent = "Login success ✔️"
+        setTimeout( log, 1300)
         setTimeout(() => {
         window.location.href = "https://www.google.com"
           }, 1500)
         }else{
-          document.getElementById("l").textContent = data.message;
-          setTimeout(() => {
-          document.getElementById("l").innerHTML = `Don't have an account? <span id="ll" onclick="sig()">Sign up</span>`;
-          }, 1300)
+          l.classList.remove("m")
+          l.textContent = data.message;
+          setTimeout(log , 1300)
         }
       })
       .catch(err => {
+        l.classList.remove("m")
         console.error(err);
-        document.getElementById("l").textContent = "Server error 😵";
-        setTimeout(() => {
-            document.getElementById("l").innerHTML = `Don't have an account? <span id="ll" onclick="sig()">Sign up</span>`;
-        }, 1300)
+        l.textContent = "Server error 😵";
+        setTimeout( log, 1300)
       })  
   }
 }
 document.getElementById("sign").onclick = function() {
+  function siggg() {
+    s.innerHTML = `Already have an account? <span onclick="sig()">Login</span>`;
+  }
   let userr = document.getElementById("int3").value;
   let passs = document.getElementById("int4").value;
   if(userr === "" || passs === ""){
-    document.getElementById("s").textContent = "All fields are require 😳 "
-    setTimeout(() => {
-    document.getElementById("s").innerHTML = `Already have an account? <span onclick="sig()">Login</span>`;
-    }, 3000)
+    s.textContent = "All fields are require 😳 "
+    setTimeout(siggg, 3000)
   }else if (userr.length < 3){
-    document.getElementById("s").textContent = "Username must be 3+"
+    s.textContent = "Username must be 3+"
     return
   }else if (passs.length < 4){
-    document.getElementById("s").textContent = "Password must be 4+"
+    s.textContent = "Password must be 4+"
     return
   }else{
-    document.getElementById("s").textContent = "Creating account"
-    document.getElementById("nir").style.display = "inline-block"
+    s.textContent = "Creating account"
+    s.classList.add("n")
       fetch("https://backend-js1e.onrender.com/sign", {
       method: "POST",
       headers: {
@@ -84,26 +85,23 @@ document.getElementById("sign").onclick = function() {
     .then(res => res.json())
     .then(data => {
       if(data.success){
-        document.getElementById("s").textContent = "Sign Up success ✔️"
-        setTimeout(() => {
-        document.getElementById("s").innerHTML = `Already have an account? <span onclick="sig()">Login</span>`;
-          }, 1300)
+        s.classList.remove("n")
+        s.textContent = "Sign Up success ✔️"
+        setTimeout( siggg, 1300)
         setTimeout(() => {
         window.location.href = "https://www.google.com"
           }, 1500)
         }else{
-          document.getElementById("s").textContent = data.message;
-          setTimeout(() => {
-          document.getElementById("s").innerHTML = `Already have an account? <span onclick="sig()">Login</span>`;
-            },1300)
+          s.classList.remove("n")
+          s.textContent = data.message;
+          setTimeout(siggg,1300)
         }
       })
       .catch(err => {
+        s.classList.remove("n")
         console.error(err);
         document.getElementById("s").textContent = "Server error😵";
-        setTimeout(() => {
-            document.getElementById("s").innerHTML = `Already have an account? <span onclick="sig()">Login</span>`;
-        }, 1300)
+        setTimeout(siggg, 1300)
       })  
   }
 }
